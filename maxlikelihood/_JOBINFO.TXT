@@ -1,0 +1,14 @@
+Task\ label=max likelihood
+Task\ ID=2715238
+Tool=IQTREE_XSEDE
+created\ on=2022-04-24 21:33:33.0
+JobHandle=NGBW-JOB-IQTREE_XSEDE-0696730A506144389BDD62B1CFD2F9CC
+RunNumber=1
+resource=expanse
+User\ ID=149876
+User\ Name=anihab
+email=u1049062@umail.utah.edu
+Output=(results,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=6
+JOBID=11720399

@@ -1,0 +1,6 @@
+"0","incdrate  <- read.csv('data/incd.csv')"
+"0","poverty   <- read.csv('data/poverty.csv')"
+"0","income    <- read.csv('data/income.csv')"
+"0","pop       <- read.csv('data/pop.csv')"
+"0",""
+"0","head(incdrate)"

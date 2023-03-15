@@ -1,0 +1,37 @@
+Abbreviation,Ascension No.,Genus,Species,Com,Color
+ppluGFP,AY268071.1,Pontellina,plumata,Crustacean,Green
+cgregGFP1,GU721032.1,Clytia,gregaria,Jellyfish,Green
+cgregGFP3,GU721034.1,Clytia,gregaria,Jellyfish,Green
+cgregGFP2,GU721033.1,Clytia,gregaria,Jellyfish,Green
+cgregGFP4,GU721035.1,Clytia,gregaria,Jellyfish,Green
+cgregGFP10,GU721036.1,Clytia,gregaria,Jellyfish,Green
+cgregGFP45,GU721041.1,Clytia,gregaria,Jellyfish,Green
+amagGFP,EU430082.1,Aldersladia ,magnificus,Jellyfish,Green
+amacGFP,AF435430.1,Aequorea ,macrodactyla,Jellyfish,Green
+amacOFP,AF435432.1,Aequorea,macrodactyla,Jellyfish,Orange
+acoerGFP,AY151052.1,Aequorea,coerulescens,Jellyfish,Green
+avicGFP,E17099.1,Aequorea ,victoria,Jellyfish,Green
+avicCFP,JX472997.1,Aequorea ,victoria,Jellyfish,Cyan
+avicYFP,JX472996.1,Aequorea ,victoria,Jellyfish,Yellow
+discRFP,HW507107,Discosoma,sp., Anemone,Red
+zoanYFP,AF168423.1,Zoanthus,sp.,Coral,Yellow
+zoanGFP,AF482451,Zoanthus,sp.,Coral,Green
+zoanRFP,AY059642.1,Zoanthus,sp.,Coral,Red
+dlinGFP,LC528625.1,Diadumene,lineata, Anemone,Green
+dlinGFP2,LC529157.1,Diadumene,lineata, Anemone,Green
+asulGFP,AF322221.1,Anemonia,sulcata, Anemone,Green
+cgigGFP,AY037776.1,Condylactis ,gigantea, Anemone,Green
+hcriGFP,AF420592.2,Heteractis,crispa, Anemone,Green
+rfloGFP,AY646065.1,Ricordea,florida,Coral,Green
+discGFP,AF420593.1,Discosoma,sp., Anemone,Green
+rfloRFP,AY037773.1,Ricordea,florida,Coral,Red
+dendGFP,AF420591.3,Dendronephthya,sp.,Coral,Green
+fancGFP,MG603733.1,Euphyllia ,ancora,Coral,Green
+mcavGFP2,AY679111,Montastraea ,cavernosa,Coral,Green
+mcavCFP,AY056460.1,Montastraea ,cavernosa,Coral,Cyan
+alorCFP,KY806741.1,Acanthastrea,lordhowensis,Coral,Cyan
+mcavGFP,AY679109,Montastraea ,cavernosa,Coral,Green
+mcavRFP,AY037770.1,Montastraea ,cavernosa,Coral,Red
+tgeoRFP,AB085641.1,Trachyphyllia,geoffroyi,Coral,Red
+scubGFP,AY037767.1,Scolymia,cubensis,Coral,Green
+alorGFP,KY806740.1,Acanthastrea,lordhowensis,Coral,Green

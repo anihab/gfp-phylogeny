@@ -1,0 +1,14 @@
+Task\ label=mrbayes
+Task\ ID=2715241
+Tool=MRBAYES_XSEDE
+created\ on=2022-04-24 21:36:36.0
+JobHandle=NGBW-JOB-MRBAYES_XSEDE-7444D5C15FF148DEB289600E58D94664
+RunNumber=1
+resource=expanse
+User\ ID=149876
+User\ Name=anihab
+email=u1049062@umail.utah.edu
+Output=(ALL_FILES,*,UNKNOWN,UNKNOWN,UNKNOWN)
+ChargeFactor=1.000000
+cores=8
+JOBID=11720505

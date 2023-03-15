@@ -1,0 +1,259 @@
+#########################
+BIOL3960 - Week 5
+R and phylogenies II: the beauty of ggtree
+#########################
+
+Today we will get acquainted with ggtree! I expect some troubleshooting to be needed.
+So take a deep breath!
+First, if you never heard of the Bioconductor, go check it at: https://www.bioconductor.org/
+
+We talked about several packages (and methods) for plotting phylogenies on R, but the ultimate one might be ggtree.
+The ggtree package from Bioconductor is an extension of ggplot2 (worth reading more its vignette, check with library(help=ggplot2)).
+ggtree was designed for visualizing and annotating phylogenies. What is really cool about ggtree: 
+once we understand its logic, it is easy to annotate trees with text, labels, images, plots within plots, etc.
+
+In this tutorial, you will be working with the NEXUS primate_tree (first open it on FigTree or text editor to visualize).
+Then you will build some cool plots using that primate phylogeny to demonstrate some features of ggtree.
+There are lots of other functions you can use - this tutorial covers some I find useful.
+You can master some of those functions for displaying comparative data on your trees!
+So I think this tutorial can - and should - be used by you while working on your plots for your Final Project.
+Disclaimer: this tutorial don’t cover the full breadth of the ggtree vignette, but I tried to provide some external edits
+(for example, a function to annotate multiple nodes with different external images).
+
+Again, a thorough overview of ggtree capabilities can be found in its vignette :)
+
+####Preparations
+Install phytools from CRAN (if already not installed), and EBImage and ggtree from Bioconductor.
+Then load the packages:
+  
+# Install from CRAN
+install.packages("phytools")
+
+# Install from Bioconductor
+BiocManager::install(c("EBImage", "ggtree", "Biostrings"))
+
+or if that is not working, try installinng BiocManager
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.12") # you can also try 3.14 if using R v '4.1' or above
+
+#then repeat installation 
+
+#but I have experience errors in the past with ggtree. So you can also clone it from the github directly
+remotes::install_github("YuLab-SMU/ggtree")
+
+# Load packages
+library("phytools") 
+library("EBImage") # for images
+library("ggtree")
+library("Biostrings")
+
+# Import the primate phylogeny from your working directory
+tree <- function # a little test here ;)
+
+#### Basics
+The simplest ggtree plot displays only branches:
+  
+# Basic plot
+p1 <- ggtree(tree)
+plot(p1)
+
+Remember the tree layouts available on ape's plot.phylo function? Cool, so the layouts available in ggtree are basically the same.
+But of course the names would be differet (R packages are sometimes repetitive for outputs, but functions are not).
+Let's check all the layouts, and also I added a demonstration on how to use the multiplot function:
+
+# Show different layouts in multiplot
+p2a <- ggtree(tree, layout="rectangular") + ggtitle("rectangular")
+p2b <- ggtree(tree, layout="slanted") + ggtitle("slanted")
+p2c <- ggtree(tree, layout="circular") + ggtitle("circular")
+p2d <- ggtree(tree, layout="radial") + ggtitle("radial")
+p2e <- ggtree(tree, layout="unrooted") + ggtitle("unrooted")
+
+multiplot(p2a, p2b, p2c, p2d, p2e, ncol=3)
+
+# ggtree is sort of infinite! Remember that a phylogenetic tree is just the diagram, but other layers (annotations) can be used for plotting.
+For instance, you can play with nodes, tips, and branches. This can be done by adding layers to the basic plot.
+Let's try to play with some of those layers:
+  
+# add tip labels (making room with xlim first - check xlim on help if needed), node labels, background color, 
+# branch colors (based on branch legths), and a legend for the branch colors
+#aes is a cool function from the ggplot2 package linking visual properties to the plots
+
+p3 <- ggtree(tree, aes(color=branch.length)) +
+xlim(0, 90) + 
+geom_tiplab(size=2, color="plum1") +
+geom_label2(aes(subset=!isTip, label=node), size=2, color="darkred", alpha=0.5) +
+theme_tree2("your_color_of_preference_here") +
+  scale_color_continuous(low='same_about_coloration', high='same_about_coloration', name="Branch length (my)") +
+  theme(legend.position="bottom")
+
+plot(p3)
+
+# Pretty cool, right? Also, let's use this plot for identifying the node numbers necessary to label in the next section.
+The idea here is to draw attention to clades.
+
+# Annotating clades
+Using the last plot, we can find the internal node numbers corresponding to primate superfamilies:
+You cann double-check if those numbers make sense by Googling some of the tip names to confirm :)
+  
+#Node 124: Galagoidea (lovely bush babies)
+#Node 113: Lemuroidea (lemurs, duh)
+#Node 110: Tarsioidea (big-eyed tarsiers)
+#Node 96: Ceboidea (I grew up seeing Calilitrix all over, sometimes capuchins as well)
+#Node 89: Hominoidea (boring)
+#Node 70: Cercopithecoidea (macaques, but also baboons - maybe Google Nasalis too, one of my favs!)
+
+Now, there are a couple of approaches we can take to delineate the clades of interest.
+A cool one is to add shaded regions around them using the function geom_hilight:
+
+# Highlight clades (feel free to play around with your color of interest)
+p4 <- ggtree(tree) + 
+  xlim(0, 125) +
+  geom_tiplab(size=2, offset=0.5) +
+  geom_hilight(node=124, fill="steelblue", alpha=0.5) +
+  geom_hilight(node=113, fill="darkgreen", alpha=0.5) +
+  geom_hilight(node=110, fill="gray", alpha=0.5) +
+  geom_hilight(node=96, fill="pink", alpha=0.5) +
+  geom_hilight(node=89, fill="beige", alpha=0.5) +
+  geom_hilight(node=70, fill="yellow", alpha=0.5) 
+
+plot(p4)
+
+Another way is to add labeled bars near the tips of the tree. And show for each bar the clade name
+(Note how to adjust the text size!! This is super important! Also, how to adjust position - check the small Tarsiidae superfamily):
+  
+# label clades
+p5 <- p4 + 
+geom_cladelabel(124, "Galagoidea", offset=25, barsize=2, angle=90, offset.text=1.5, hjust=0.5, fontsize=3) + 
+geom_cladelabel(113, "Lemuroidea", offset=25, barsize=2, angle=90, offset.text=1.5, hjust=0.5, fontsize=3) +
+geom_cladelabel(110, "Tarsioidea", offset=25, barsize=2, angle=75, offset.text=2.5, hjust=0.2, fontsize=2) +
+geom_cladelabel(96, "Ceboidea", offset=25, barsize=2, angle=90, offset.text=1.5, hjust=0.5, fontsize=3) +
+geom_cladelabel(89, "Hominoidea", offset=25, barsize=2, angle=90, offset.text=1.5, hjust=0.5, fontsize=3) +
+geom_cladelabel(70, "Cercopithecoidea", offset=25, barsize=2, angle=90, offset.text=1.5, hjust=0.5, fontsize=3)
+
+plot(p5)
+
+# Ok, let's get fancy! We can also label our clades with images - really!
+Let's try to import images from the phylopic.org database (another cool resource you can use for your Final Project!).
+What's nice is that ggtree is designed to work with that dabatase using the phylopic function.
+To annotate nodes with phylopic, first you need to find the number of each node you want to annotate.
+Then match each node with a link to an image on phylopic.org.
+Note here: to point to the images, you have to provide the ‘phylopic_id’ argument. 
+This is the string of letters and numbers that comes after the http://phylopic.org/image/ part of the url for the image you want.
+So for example, let's say that you want to use the image of a chimpanzee for your tree, at this url:
+
+# Please make sure this link is working! 
+http://phylopic.org/image/f06b4dd0-094e-4f37-9105-25fdb4eb1b02/
+
+Then the phylopic_id argument would be set to "f06b4dd0-094e-4f37-9105-25fdb4eb1b02". Does that make sense?
+
+# Ok, let's get busy! Below are the subpaths to images I want to use for the major primate superfamilies (remember the nodes from previous plots?)
+
+    Galagoidea (124): “7fb9bea8-e758-4986-afb2-95a2c3bf983d”
+    Lemuroidea (113): “bac25f49-97a4-4aec-beb6-f542158ebd23”
+    Tarsioidea (110): “f598fb39-facf-43ea-a576-1861304b2fe4”
+    Ceboidea (96): “aceb287d-84cf-46f1-868c-4797c4ac54a8”
+    Hominoidea (89): “0174801d-15a6-4668-bfe0-4c421fbe51e8”
+    Cercopithecoidea (70): “72f2f854-f3cd-4666-887c-35d5c256ab0f”
+    
+#Now add the images to the plot. I am providing one of them, but I want you to plot all of them.
+p6 <- phylopic(p5, "0174801d-15a6-4668-bfe0-4c421fbe51e8", node=89) # hominoids
+
+
+# Remember that you want to overwrite the plot after adding the next image! After including all of the images, plot final figure:
+plot (6)
+
+#### Just a quick break on ggtree here. I want to talk about a function on the phytools package that I think it is super cool.
+You can project a tree onto a geographic map! Really!
+You can try to do that using the phylo.to.map function.
+
+# First, let's simulate tree & data
+tree<-pbtree(n=26,scale=100)
+tree$tip.label<-LETTERS[26:1]
+
+# Don't worry too much about the fastBM function for now!
+We will cover Brownian Motion reconstructions later on the semester!
+
+lat<-fastBM(tree,sig2=10,bounds=c(-90,90))
+long<-fastBM(tree,sig2=80,bounds=c(-180,180))
+
+# Now plot projection
+xx<-phylo.to.map(tree,cbind(lat,long),plot=FALSE)
+
+## Now try to add the tree points to map coordinates
+plot(xx,type="phylogram",asp=1.3,mar=c(0.1,0.5,3.1,0.1))
+
+# A more chaotic plot, overlapping the tree projected directly on map
+plot(xx,type="direct",asp=1.3,mar=c(0.1,0.5,3.1,0.1))
+
+#### Ok, back to ggtree :) 
+Do you remember the package ape? Let's mix some of its data with ggtree functionalities. 
+ggtree provides a function called gzoom that is similar to zoom function provided in ape
+(again, why do they do that?!)
+This function plots simultaneously a whole phylogenetic tree and a portion of it.
+The reason is obvious: you can explore very large trees - think about your Final Project!
+
+#We gonna use the data that is available on the package - remember that packages come with examples?
+Ok, so call the package ape and the chiroptera data (I won't provide the code here, you can do it!)
+
+#Then plot it
+gzoom(yourdata, grep("Plecotus", yourdata$tip.label))
+
+# Super cool, right?
+
+# Finally, ggtree supports interactive tree annotation/manipulation by implementing an identify method.
+So you are able to click on a node to highlight a clade, to label or rotate it, etc.
+This is tricky, and notice how code is organized:
+
+library(ggtree)
+
+set.seed(123)
+tr<-rtree(60)
+p<-ggtree(tr, size=2)
+print(p)
+
+cols<-rainbow(5)
+
+# Remember the loops we saw on tutorial 1? Let's use them below for different functionalities.
+Plot and click on things!
+
+for (i in 1:5) {
+  p<- p + geom_balance(identify(p), fill=cols[1])
+  print(p)
+}
+
+for (i in 1:5) {
+  p<- p + geom_highlight(identify(p), fill=cols[1])
+  print(p)
+}
+
+for (i in 1:5) {
+  p %<>% rotate(identify(p))
+  print(p)
+}
+
+#### EXERCISES
+
+#Exercise 1 - Visualizing tree with multiple sequence alignment 
+With msaplot function, you can visualize multiple sequence alignment with phylogenetic tree.
+Using the FluA_H3_AA example file from the system, plot the beast_tree using the fasta argument
+
+
+# Exercise 2 - Displaying specific slice of alignment and specific window parameter
+With msaplot function, you can also plot a specific slice of the alignment.
+Alignments can also be displayed by specific window parameter.
+Using a window parameter of 50bp (e.g., 50-100; 150-200) + polar coordinates with theta=y from the ggplot2 
+package, plot the beast_tree and the FluA_H3_AA example file from the system
+
+
+# Exercise 3
+Create a PDF (PDF, not jpeg, not png, no other format) plot from phylo.to.map code, primate p6 plot, and for Exercises 1 and 2.
+From those 4 plots, send at least one of the plots from tutorial + one of the plots from either exercise 1 or 2 to my email by Sunday 6pm.
+I want you to use the R enviroment to plot and generate your figures.
+So also send me your coding along the two plots to show proof of use of R to generate your PDFs.
+
+Hint_1: you can use dev.off() after plotting. Hint_2: code will be three lines:
+1) calling pdf, 2) plot, 3) shutting down specified device (in this case, PDF plot)
+Hint_3: use arguments width=somenumberhere, heigth=somenumberhere to adjust plotting area.
+

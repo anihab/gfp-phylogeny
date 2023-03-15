@@ -1,0 +1,4 @@
+"0","povdict <- read.csv(""data/poverty_columnkey.csv"")"
+"0","incdict <- read.csv(""data/income_columnkey.csv"")"
+"0",""
+"0","head(povdict)"

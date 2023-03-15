@@ -1,0 +1,10 @@
+/cm/local/apps/slurm/var/spool/job11720399/slurm_script: line 22: genmap: command not found
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     3  100     3    0     0    103      0 --:--:-- --:--:-- --:--:--   103
+chmod: changing permissions of 'infile.txt': Operation not permitted
+chmod: changing permissions of '_JOBINFO.TXT': Operation not permitted
+chmod: changing permissions of 'scheduler.conf': Operation not permitted
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100     3  100     3    0     0     34      0 --:--:-- --:--:-- --:--:--    34

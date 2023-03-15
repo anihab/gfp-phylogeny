@@ -1,0 +1,1053 @@
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+CIPRES_THREADSPP=1
+CIPRES_NP=8
+paramfile=paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+running: /cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/mrbayes-3.2.7a-udtjzcbkjqxwy32ivavi45jcbnzpf5q4/bin/mb < paramfile.txt
+
+
+                            MrBayes 3.2.7a x86_64
+
+                      (Bayesian Analysis of Phylogeny)
+
+                             (Parallel version)
+                         (8 processors available)
+
+              Distributed under the GNU General Public License
+
+
+               Type "help" or "help <command>" for information
+                     on the commands that are available.
+
+                   Type "about" for authorship and general
+                       information about the program.
+
+
+MrBayes > 
+   Setting Precision to 5
+
+MrBayes > 
+   Setting Scientific to Yes
+
+MrBayes > 
+   Setting autoclose to yes
+
+MrBayes > 
+   Setting nowarnings to yes
+
+MrBayes > 
+   Setting usebeagle to no
+
+MrBayes > 
+   Executing file "infile.nex"
+   UNIX line termination
+   Longest line length = 1629
+   Parsing file
+   Expecting NEXUS formatted file
+   Reading data block
+      Allocated taxon set
+      Allocated matrix
+      Defining new matrix with 36 taxa and 1615 characters
+      Data is Dna
+      Gaps coded as -
+      Missing data coded as ?
+      Taxon  1 -> cgigGFP
+      Taxon  2 -> asulGFP
+      Taxon  3 -> hcriGFP
+      Taxon  4 -> discGFP
+      Taxon  5 -> discRFP
+      Taxon  6 -> rfloGFP
+      Taxon  7 -> rfloRFP
+      Taxon  8 -> dendGFP
+      Taxon  9 -> mcavGFP
+      Taxon 10 -> mcavGFP2
+      Taxon 11 -> mcavCFP
+      Taxon 12 -> mcavRFP
+      Taxon 13 -> fancGFP
+      Taxon 14 -> scubGFP
+      Taxon 15 -> dlinGFP
+      Taxon 16 -> dlinGFP2
+      Taxon 17 -> zoanGFP
+      Taxon 18 -> zoanYFP
+      Taxon 19 -> zoanRFP
+      Taxon 20 -> avicGFP
+      Taxon 21 -> avicCFP
+      Taxon 22 -> avicYFP
+      Taxon 23 -> acoerGFP
+      Taxon 24 -> amagGFP
+      Taxon 25 -> amacGFP
+      Taxon 26 -> amacOFP
+      Taxon 27 -> cgregGFP1
+      Taxon 28 -> cgregGFP2
+      Taxon 29 -> cgregGFP3
+      Taxon 30 -> cgregGFP4
+      Taxon 31 -> cgregGFP10
+      Taxon 32 -> cgregGFP45
+      Taxon 33 -> alorGFP
+      Taxon 34 -> alorCFP
+      Taxon 35 -> tgeoRFP
+      Taxon 36 -> ppluGFP
+      Successfully read matrix
+      Setting default partition (does not divide up characters)
+      Setting model defaults
+      Seed (for generating default start values) = 1650861814
+      Setting output file names to "infile.nex.run<i>.<p|t>"
+   Exiting data block
+   Skipping "ASSUMPTIONS" block
+   Skipping "CODONS" block
+   Skipping "SETS" block
+   Reached end of file
+
+MrBayes > 
+   Setting outgroup to taxon "ppluGFP"
+
+MrBayes > 
+   Successfully set likelihood model parameters
+
+MrBayes > 
+   Setting Nst to 1
+   Successfully set likelihood model parameters
+
+MrBayes > 
+   Setting Nucmodel to 4by4
+   Set state frequency prior to default
+   Successfully set likelihood model parameters
+
+MrBayes > 
+   Setting Rates to Equal
+   Successfully set likelihood model parameters
+
+MrBayes > 
+   Successfully set likelihood model parameters
+
+MrBayes > 
+   Setting Pinvarpr to Uniform(0.00,1.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Ratepr to Fixed
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Statefreqpr to Dirichlet(0.25,0.25,0.25,0.25)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Revmatpr to Dirichlet(1.00,1.00,1.00,1.00,1.00,1.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Ratecorrpr to Uniform(-1.00,1.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Covswitchpr to Uniform(0.00,100.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Tratiopr to Beta(1.00,1.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Setting Brlenspr to Unconstrained:Exponential(10.00)
+   Successfully set prior model parameters
+
+MrBayes > 
+   Not reporting site rates
+
+MrBayes > 
+   Setting reversible rate matrix (revmat) format to Dirichlet
+
+MrBayes > 
+   Setting number of generations to 5000
+   Setting number of runs to 2
+   Setting number of chains to 4
+   Setting heating parameter to 0.200000
+   Setting swap frequency to 1
+   Setting number of swaps per swapping cycle to 1
+   Setting sample frequency to 1000
+   Setting calculation of MCMC diagnostics ('Mcmcdiagn') to yes
+   Setting minimum partition frequency to 0.10
+   Calculating MCMC diagnostics only for cold chain(s)
+   Using relative burnin (a fraction of samples discarded).
+   Setting chain burn-in to 0
+   Setting burnin fraction to 0.25
+   Using stopping rule.
+   Setting 'Starttree' to "Random"
+   Setting burnin fraction to 0.25
+   Setting number of perturbations to start tree to 0
+   Setting ordertaxa to yes
+   Setting chain output file names to "infile.nex.run<i>.<p/t>"
+   Running Markov chain
+   MCMC stamp = 2587954977
+   Seed = 1951504327
+   Swapseed = 1650861814
+   Model settings:
+
+      Data not partitioned --
+         Datatype  = DNA
+         Nucmodel  = 4by4
+         Nst       = 1
+         Covarion  = No
+         # States  = 4
+                     State frequencies have a Dirichlet prior
+                     (0.25,0.25,0.25,0.25)
+         Rates     = Equal
+
+   Active parameters: 
+
+      Parameters
+      ---------------------
+      Statefreq           1
+      Ratemultiplier      2
+      Topology            3
+      Brlens              4
+      ---------------------
+
+      1 --  Parameter  = Pi
+            Type       = Stationary state frequencies
+            Prior      = Dirichlet
+
+      2 --  Parameter  = Ratemultiplier
+            Type       = Partition-specific rate multiplier
+            Prior      = Fixed(1.0)
+
+      3 --  Parameter  = Tau
+            Type       = Topology
+            Prior      = All topologies equally probable a priori
+            Subparam.  = V
+
+      4 --  Parameter  = V
+            Type       = Branch lengths
+            Prior      = Unconstrained:Exponential(10.0)
+
+
+   Number of chains per MPI processor = 1
+
+   The MCMC sampler will use the following moves:
+      With prob.  Chain will use move
+         0.98 %   Dirichlet(Pi)
+         0.98 %   Slider(Pi)
+         9.80 %   ExtSPR(Tau,V)
+         9.80 %   ExtTBR(Tau,V)
+         9.80 %   NNI(Tau,V)
+         9.80 %   ParsSPR(Tau,V)
+        39.22 %   Multiplier(V)
+        13.73 %   Nodeslider(V)
+         5.88 %   TLMultiplier(V)
+
+   Division 1 has 1237 unique site patterns
+   Initializing conditional likelihoods
+   Using standard FMA likelihood calculator for division 1 (single-precision)
+   Resetting starting trees and tree parameters
+
+   Initial log likelihoods and log prior probs for run 1:
+      Chain 1 -- -48478.714052 -- 34.276554
+
+   There are 7 more chains on other processor(s)
+
+
+   Using a relative burnin of 25.0 % for diagnostics
+
+   Chain results (5000 generations requested):
+
+      0 -- [-48478.714] [...7 remote chains...] 
+   1000 -- (-20829.772) [...7 remote chains...] -- 0:00:00
+   2000 -- (-19645.156) [...7 remote chains...] -- 0:00:00
+   3000 -- (-19508.821) [...7 remote chains...] -- 0:00:00
+   4000 -- (-19432.211) [...7 remote chains...] -- 0:00:00
+   5000 -- (-19401.855) [...7 remote chains...] -- 0:00:00
+
+   Average standard deviation of split frequencies: 0.103199
+
+   Analysis completed in 1 second
+   Analysis used 0.95 seconds of CPU time on processor 0
+   Likelihood of best state for "cold" chain of run 1 was -19361.36
+   Likelihood of best state for "cold" chain of run 2 was -19374.81
+
+   Acceptance rates for the moves in the "cold" chain of run 1:
+      With prob.   (last 100)   chain accepted proposals by move
+          NA           NA       Dirichlet(Pi)
+          NA           NA       Slider(Pi)
+          9.3 %     (  6 %)     ExtSPR(Tau,V)
+          7.8 %     (  5 %)     ExtTBR(Tau,V)
+         10.9 %     (  3 %)     NNI(Tau,V)
+         12.6 %     (  6 %)     ParsSPR(Tau,V)
+         46.4 %     ( 44 %)     Multiplier(V)
+         27.8 %     ( 24 %)     Nodeslider(V)
+          7.8 %     ( 11 %)     TLMultiplier(V)
+
+   Acceptance rates for the moves in the "cold" chain of run 2:
+      With prob.   (last 100)   chain accepted proposals by move
+          NA           NA       Dirichlet(Pi)
+          NA           NA       Slider(Pi)
+         10.4 %     ( 10 %)     ExtSPR(Tau,V)
+         10.9 %     (  6 %)     ExtTBR(Tau,V)
+         12.6 %     ( 11 %)     NNI(Tau,V)
+         10.5 %     (  4 %)     ParsSPR(Tau,V)
+         45.2 %     ( 35 %)     Multiplier(V)
+         29.7 %     ( 22 %)     Nodeslider(V)
+          8.6 %     (  9 %)     TLMultiplier(V)
+
+   Chain swap information for run 1:
+
+              1     2     3     4 
+        --------------------------
+      1 |        0.01  0.00  0.00 
+      2 |   807        0.17  0.02 
+      3 |   805   815        0.12 
+      4 |   915   869   789       
+
+   Chain swap information for run 2:
+
+              1     2     3     4 
+        --------------------------
+      1 |        0.25  0.00  0.00 
+      2 |   845        0.02  0.00 
+      3 |   807   814        0.08 
+      4 |   828   851   855       
+
+   Upper diagonal: Proportion of successful state exchanges between chains
+   Lower diagonal: Number of attempted state exchanges between chains
+
+   Chain information:
+
+     ID -- Heat 
+    -----------
+      1 -- 1.00  (cold chain)
+      2 -- 0.83 
+      3 -- 0.71 
+      4 -- 0.62 
+
+   Heat = 1 / (1 + T * (ID - 1))
+      (where T = 0.20 is the temperature and ID is the chain number)
+
+
+   ************************* WARNING!! ************************************  
+   MrBayes suspects that your runs have not converged because the tree       
+   samples are very different (average standard deviation of split frequen-  
+   cies larger than 0.10 (0.10)). MrBayes suggests that you run the ana-   
+   lysis longer or try to improve the MCMC sampling efficiency by fine-      
+   tuning MCMC proposal or heating parameters.                               
+
+MrBayes > 
+   Setting burn-in to 10
+   Using relative burnin (a fraction of samples discarded).
+   Setting burnin fraction to 0.25
+   Setting sump nruns to 2
+   Setting sump output file name to "sumpoutput.out"
+   Summarizing parameters in files infile.nex.run1.p and infile.nex.run2.p
+   Writing summary statistics to file infile.nex.pstat
+   Using relative burnin ('relburnin=yes'), discarding the first 25 % of samples
+
+   Below are rough plots of the generation (x-axis) versus the log   
+   probability of observing the data (y-axis). You can use these     
+   graphs to determine what the burn in for your analysis should be. 
+   When the log probability starts to plateau you may be at station- 
+   arity. Sample trees and parameters after the log probability      
+   plateaus. Of course, this is not a guarantee that you are at sta- 
+   tionarity. Also examine the convergence diagnostics provided by   
+   the 'sump' and 'sumt' commands for all the parameters in your     
+   model. Remember that the burn in is the number of samples to dis- 
+   card. There are a total of ngen / samplefreq samples taken during 
+   a MCMC analysis.                                                  
+
+   Overlay plot for both runs:
+   (1 = Run number 1; 2 = Run number 2; * = Both runs)
+
+   +------------------------------------------------------------+ -19361.30
+   |               1              *              *             *|
+   |               2                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |1                                                           |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |                                                            |
+   |2                                                           |
+   +------+-----+-----+-----+-----+-----+-----+-----+-----+-----+ -21167.50
+   ^                                                            ^
+   1000                                                         5000
+
+
+   Estimated marginal likelihoods for runs sampled in files
+      "infile.nex.run1.p" and "infile.nex.run2.p":
+      (Use the harmonic mean for Bayes factor comparisons of models)
+
+      (Values are saved to the file sumpoutput.out.lstat)
+
+   Run   Arithmetic mean   Harmonic mean
+   --------------------------------------
+     1     -19371.61        -20006.89
+     2     -19362.91        -21165.89
+   --------------------------------------
+   TOTAL   -19363.60        -21165.20
+   --------------------------------------
+
+
+   Model parameter summaries over the runs sampled in files
+      "infile.nex.run1.p" and "infile.nex.run2.p":
+      Summaries are based on a total of 10 samples from 2 runs.
+      Each run produced 6 samples of which 5 samples were included.
+      Parameter summaries saved to file "sumpoutput.out.pstat".
+
+                                         95% HPD Interval
+                                       --------------------
+   Parameter      Mean      Variance     Lower       Upper       Median    min ESS*  avg ESS    PSRF+ 
+   --------------------------------------------------------------------------------------------------
+   TL          6.418667    0.028621    6.081200    6.692470    6.432290      5.00      5.00    0.895
+   pi(A)       0.308480    0.000055    0.292729    0.316803    0.312098      3.38      4.19    1.125
+   pi(C)       0.207483    0.000059    0.198592    0.222511    0.206894      5.00      5.00    2.034
+   pi(G)       0.223948    0.000044    0.213694    0.234825    0.222381      5.00      5.00    1.006
+   pi(T)       0.260089    0.000034    0.249780    0.269761    0.258720      3.94      4.47    0.897
+   --------------------------------------------------------------------------------------------------
+   * Convergence diagnostic (ESS = Estimated Sample Size); min and avg values
+     correspond to minimal and average ESS among runs. 
+     ESS value below 100 may indicate that the parameter is undersampled. 
+   + Convergence diagnostic (PSRF = Potential Scale Reduction Factor; Gelman
+     and Rubin, 1992) should approach 1.0 as runs converge.
+
+
+
+MrBayes > 
+   Setting urn-in to 10
+   Using relative burnin (a fraction of samples discarded).
+   Setting burnin fraction to 0.25
+   Setting sumt nruns to 2
+   Setting sumt ntrees to 1
+   Including partitions with probability greater than or equal to 0.050000 in summary statistics
+   Setting sumt contype to Halfcompat
+   Setting sumt conformat to Figtree
+   Summarizing trees in files "infile.nex.run1.t" and "infile.nex.run2.t"
+   Using relative burnin ('relburnin=yes'), discarding the first 25 % of sampled trees
+   Writing statistics to files infile.nex.<parts|tstat|vstat|trprobs|con>
+   Examining first file ...
+   Found one tree block in file "infile.nex.run1.t" with 6 trees in last block
+   Expecting the same number of trees in the last tree block of all files
+
+   Tree reading status:
+
+   0      10      20      30      40      50      60      70      80      90     100
+   v-------v-------v-------v-------v-------v-------v-------v-------v-------v-------v
+   *********************************************************************************
+
+   Read a total of 12 trees in 2 files (sampling 10 of them)
+      (Each file contained 6 trees of which 5 were sampled)
+                                                                                   
+   General explanation:                                                          
+                                                                                   
+   In an unrooted tree, a taxon bipartition (split) is specified by removing a   
+   branch, thereby dividing the species into those to the left and those to the  
+   right of the branch. Here, taxa to one side of the removed branch are denoted 
+   '.' and those to the other side are denoted '*'. Specifically, the '.' symbol 
+   is used for the taxa on the same side as the outgroup.                        
+                                                                                   
+   In a rooted or clock tree, the tree is rooted using the model and not by      
+   reference to an outgroup. Each bipartition therefore corresponds to a clade,  
+   that is, a group that includes all the descendants of a particular branch in  
+   the tree.  Taxa that are included in each clade are denoted using '*', and    
+   taxa that are not included are denoted using the '.' symbol.                  
+                                                                                   
+   The output first includes a key to all the bipartitions with frequency larger 
+   or equual to (Minpartfreq) in at least one run. Minpartfreq is a parameter to 
+   sumt command and currently it is set to 0.05.  This is followed by a table  
+   with statistics for the informative bipartitions (those including at least    
+   two taxa), sorted from highest to lowest probability. For each bipartition,   
+   the table gives the number of times the partition or split was observed in all
+   runs (#obs) and the posterior probability of the bipartition (Probab.), which 
+   is the same as the split frequency. If several runs are summarized, this is   
+   followed by the minimum split frequency (Min(s)), the maximum frequency       
+   (Max(s)), and the standard deviation of frequencies (Stddev(s)) across runs.  
+   The latter value should approach 0 for all bipartitions as MCMC runs converge.
+                                                                                   
+   This is followed by a table summarizing branch lengths, node heights (if a    
+   clock model was used) and relaxed clock parameters (if a relaxed clock model  
+   was used). The mean, variance, and 95 % credible interval are given for each 
+   of these parameters. If several runs are summarized, the potential scale      
+   reduction factor (PSRF) is also given; it should approach 1 as runs converge. 
+   Node heights will take calibration points into account, if such points were   
+   used in the analysis.                                                         
+                                                                                 
+   Note that Stddev may be unreliable if the partition is not present in all     
+   runs (the last column indicates the number of runs that sampled the partition 
+   if more than one run is summarized). The PSRF is not calculated at all if     
+   the partition is not present in all runs.The PSRF is also sensitive to small  
+   sample sizes and it should only be considered a rough guide to convergence    
+   since some of the assumptions allowing one to interpret it as a true potential
+   scale reduction factor are violated in MrBayes.                               
+                                                                                 
+   List of taxa in bipartitions:                                                 
+                                                                                   
+      1 -- cgigGFP
+      2 -- asulGFP
+      3 -- hcriGFP
+      4 -- discGFP
+      5 -- discRFP
+      6 -- rfloGFP
+      7 -- rfloRFP
+      8 -- dendGFP
+      9 -- mcavGFP
+     10 -- mcavGFP2
+     11 -- mcavCFP
+     12 -- mcavRFP
+     13 -- fancGFP
+     14 -- scubGFP
+     15 -- dlinGFP
+     16 -- dlinGFP2
+     17 -- zoanGFP
+     18 -- zoanYFP
+     19 -- zoanRFP
+     20 -- avicGFP
+     21 -- avicCFP
+     22 -- avicYFP
+     23 -- acoerGFP
+     24 -- amagGFP
+     25 -- amacGFP
+     26 -- amacOFP
+     27 -- cgregGFP1
+     28 -- cgregGFP2
+     29 -- cgregGFP3
+     30 -- cgregGFP4
+     31 -- cgregGFP10
+     32 -- cgregGFP45
+     33 -- alorGFP
+     34 -- alorCFP
+     35 -- tgeoRFP
+     36 -- ppluGFP
+
+   Key to taxon bipartitions (saved to file "infile.nex.parts"):
+
+    ID -- Partition
+   -------------------------------------------
+     1 -- *...................................
+     2 -- .*..................................
+     3 -- ..*.................................
+     4 -- ...*................................
+     5 -- ....*...............................
+     6 -- .....*..............................
+     7 -- ......*.............................
+     8 -- .......*............................
+     9 -- ........*...........................
+    10 -- .........*..........................
+    11 -- ..........*.........................
+    12 -- ...........*........................
+    13 -- ............*.......................
+    14 -- .............*......................
+    15 -- ..............*.....................
+    16 -- ...............*....................
+    17 -- ................*...................
+    18 -- .................*..................
+    19 -- ..................*.................
+    20 -- ...................*................
+    21 -- ....................*...............
+    22 -- .....................*..............
+    23 -- ......................*.............
+    24 -- .......................*............
+    25 -- ........................*...........
+    26 -- .........................*..........
+    27 -- ..........................*.........
+    28 -- ...........................*........
+    29 -- ............................*.......
+    30 -- .............................*......
+    31 -- ..............................*.....
+    32 -- ...............................*....
+    33 -- ................................*...
+    34 -- .................................*..
+    35 -- ..................................*.
+    36 -- ***********************************.
+    37 -- ...*.**.............................
+    38 -- ...................****.............
+    39 -- ................*.*.................
+    40 -- ...................*************....
+    41 -- ...................*******..........
+    42 -- ....................**..............
+    43 -- ................***.................
+    44 -- ..........*......................*..
+    45 -- *.*.................................
+    46 -- .............*..................*...
+    47 -- ***.................................
+    48 -- ...................***..............
+    49 -- ........................**..........
+    50 -- ..............**....................
+    51 -- ..........................******....
+    52 -- ........*..*.*..................*.*.
+    53 -- ...*..*.............................
+    54 -- ...........*......................*.
+    55 -- ...........*.*..................*.*.
+    56 -- ........****.*..................***.
+    57 -- .......*******..................***.
+    58 -- ........******..................***.
+    59 -- ........*.**.*..................***.
+    60 -- ...........................*.***....
+    61 -- *******************.............***.
+    62 -- ****.*********..................***.
+    63 -- .......................***..........
+    64 -- ...*.*********..................***.
+    65 -- ..............................**....
+    66 -- ****.***********................***.
+    67 -- ****************................***.
+    68 -- ..........................*.*.......
+    69 -- ...........................*.*......
+    70 -- ...................*****............
+    71 -- ..........................*.****....
+    72 -- ..........................*.*.**....
+    73 -- ...........................*..**....
+    74 -- ...........................*****....
+    75 -- ..........................**.***....
+    76 -- .............................***....
+    77 -- ****.******************************.
+    78 -- .........*..*.......................
+    79 -- ................****************....
+    80 -- ........*..*........................
+    81 -- .......*......**....................
+    82 -- .....**.............................
+    83 -- ....*...........***.................
+    84 -- ...*.******************************.
+    85 -- .......****************************.
+    86 -- ........******..*******************.
+    87 -- ****.*********..*******************.
+    88 -- ...*.*********..*******************.
+    89 -- .......*******..*******************.
+    90 -- ****************...****************.
+    91 -- ****.**.*.**.*.....****************.
+    92 -- ****.**............*************....
+    93 -- ***................*************....
+    94 -- ****.***********...****************.
+    95 -- ****.*********.....****************.
+    96 -- ****.**.******.....****************.
+    97 -- **************..***.............***.
+    98 -- ...........................*..*.....
+    99 -- ............................*..*....
+   100 -- ...........................*.*.*....
+   101 -- ...................****.**..........
+   102 -- ..........................*...*.....
+   103 -- .............................**.....
+   104 -- .............................*.*....
+   105 -- .........**.*....................*..
+   106 -- ........**.*.*..................*.*.
+   107 -- .............*..*****************.*.
+   108 -- ...................********.****....
+   109 -- .............*..*****************...
+   110 -- ........*****....................*..
+   -------------------------------------------
+
+   Summary statistics for informative taxon bipartitions
+      (saved to file "infile.nex.tstat"):
+
+    ID   #obs    Probab.     Sd(s)+      Min(s)      Max(s)   Nruns 
+   -----------------------------------------------------------------
+    37    10    1.000000    0.000000    1.000000    1.000000    2
+    38    10    1.000000    0.000000    1.000000    1.000000    2
+    39    10    1.000000    0.000000    1.000000    1.000000    2
+    40    10    1.000000    0.000000    1.000000    1.000000    2
+    41    10    1.000000    0.000000    1.000000    1.000000    2
+    42    10    1.000000    0.000000    1.000000    1.000000    2
+    43    10    1.000000    0.000000    1.000000    1.000000    2
+    44    10    1.000000    0.000000    1.000000    1.000000    2
+    45    10    1.000000    0.000000    1.000000    1.000000    2
+    46    10    1.000000    0.000000    1.000000    1.000000    2
+    47    10    1.000000    0.000000    1.000000    1.000000    2
+    48    10    1.000000    0.000000    1.000000    1.000000    2
+    49    10    1.000000    0.000000    1.000000    1.000000    2
+    50    10    1.000000    0.000000    1.000000    1.000000    2
+    51     9    0.900000    0.141421    0.800000    1.000000    2
+    52     9    0.900000    0.141421    0.800000    1.000000    2
+    53     9    0.900000    0.141421    0.800000    1.000000    2
+    54     9    0.900000    0.141421    0.800000    1.000000    2
+    55     9    0.900000    0.141421    0.800000    1.000000    2
+    56     8    0.800000    0.000000    0.800000    0.800000    2
+    57     8    0.800000    0.000000    0.800000    0.800000    2
+    58     8    0.800000    0.000000    0.800000    0.800000    2
+    59     8    0.800000    0.282843    0.600000    1.000000    2
+    60     8    0.800000    0.000000    0.800000    0.800000    2
+    61     7    0.700000    0.141421    0.600000    0.800000    2
+    62     7    0.700000    0.141421    0.600000    0.800000    2
+    63     7    0.700000    0.141421    0.600000    0.800000    2
+    64     7    0.700000    0.141421    0.600000    0.800000    2
+    65     6    0.600000    0.000000    0.600000    0.600000    2
+    66     6    0.600000    0.282843    0.400000    0.800000    2
+    67     6    0.600000    0.282843    0.400000    0.800000    2
+    68     5    0.500000    0.141421    0.400000    0.600000    2
+    69     3    0.300000    0.141421    0.200000    0.400000    2
+    70     2    0.200000    0.000000    0.200000    0.200000    2
+    71     2    0.200000    0.000000    0.200000    0.200000    2
+    72     2    0.200000    0.000000    0.200000    0.200000    2
+    73     2    0.200000    0.000000    0.200000    0.200000    2
+    74     2    0.200000    0.000000    0.200000    0.200000    2
+    75     2    0.200000    0.282843    0.000000    0.400000    1 *
+    76     2    0.200000    0.000000    0.200000    0.200000    2
+    77     2    0.200000    0.282843    0.000000    0.400000    1 *
+    78     2    0.200000    0.000000    0.200000    0.200000    2
+    79     2    0.200000    0.282843    0.000000    0.400000    1 *
+    80     1    0.100000    0.141421    0.000000    0.200000    1 *
+    81     1    0.100000    0.141421    0.000000    0.200000    1 *
+    82     1    0.100000    0.141421    0.000000    0.200000    1 *
+    83     1    0.100000    0.141421    0.000000    0.200000    1 *
+    84     1    0.100000    0.141421    0.000000    0.200000    1 *
+    85     1    0.100000    0.141421    0.000000    0.200000    1 *
+    86     1    0.100000    0.141421    0.000000    0.200000    1 *
+    87     1    0.100000    0.141421    0.000000    0.200000    1 *
+    88     1    0.100000    0.141421    0.000000    0.200000    1 *
+    89     1    0.100000    0.141421    0.000000    0.200000    1 *
+    90     1    0.100000    0.141421    0.000000    0.200000    1 *
+    91     1    0.100000    0.141421    0.000000    0.200000    1 *
+    92     1    0.100000    0.141421    0.000000    0.200000    1 *
+    93     1    0.100000    0.141421    0.000000    0.200000    1 *
+    94     1    0.100000    0.141421    0.000000    0.200000    1 *
+    95     1    0.100000    0.141421    0.000000    0.200000    1 *
+    96     1    0.100000    0.141421    0.000000    0.200000    1 *
+    97     1    0.100000    0.141421    0.000000    0.200000    1 *
+    98     1    0.100000    0.141421    0.000000    0.200000    1 *
+    99     1    0.100000    0.141421    0.000000    0.200000    1 *
+   100     1    0.100000    0.141421    0.000000    0.200000    1 *
+   101     1    0.100000    0.141421    0.000000    0.200000    1 *
+   102     1    0.100000    0.141421    0.000000    0.200000    1 *
+   103     1    0.100000    0.141421    0.000000    0.200000    1 *
+   104     1    0.100000    0.141421    0.000000    0.200000    1 *
+   105     1    0.100000    0.141421    0.000000    0.200000    1 *
+   106     1    0.100000    0.141421    0.000000    0.200000    1 *
+   107     1    0.100000    0.141421    0.000000    0.200000    1 *
+   108     1    0.100000    0.141421    0.000000    0.200000    1 *
+   109     1    0.100000    0.141421    0.000000    0.200000    1 *
+   110     1    0.100000    0.141421    0.000000    0.200000    1 *
+   -----------------------------------------------------------------
+   + Convergence diagnostic (standard deviation of split frequencies)
+     should approach 0.0 as runs converge.
+
+   * The partition was not found in all runs so the values are unreliable
+
+   Summary statistics for branch and node parameters
+      (saved to file "infile.nex.vstat"):
+
+                                            95% HPD Interval
+                                          --------------------
+   Parameter       Mean       Variance     Lower       Upper       Median     PSRF+  Nruns
+   ---------------------------------------------------------------------------------------
+   length[1]      0.086400    0.000108    0.076261    0.112910    0.084209    0.940    2
+   length[2]      0.066450    0.000487    0.037509    0.097489    0.071684    0.966    2
+   length[3]      0.140264    0.000262    0.119136    0.169318    0.135179    0.928    2
+   length[4]      0.077766    0.000590    0.029582    0.105490    0.085829    1.273    2
+   length[5]      0.286724    0.004489    0.120707    0.355238    0.307522    1.119    2
+   length[6]      0.054266    0.000067    0.043679    0.066767    0.055915    0.903    2
+   length[7]      0.064671    0.000150    0.043398    0.084610    0.064981    0.992    2
+   length[8]      0.139074    0.000647    0.093179    0.164882    0.155952    1.157    2
+   length[9]      0.056829    0.000079    0.041337    0.073181    0.060211    0.929    2
+   length[10]     0.062016    0.000889    0.034719    0.123940    0.051609    0.913    2
+   length[11]     0.074245    0.000185    0.052791    0.095903    0.073762    1.135    2
+   length[12]     0.061277    0.000378    0.040157    0.106158    0.062565    0.900    2
+   length[13]     0.176111    0.000671    0.132654    0.216460    0.180287    0.910    2
+   length[14]     0.163623    0.000347    0.131943    0.187654    0.165029    1.321    2
+   length[15]     0.005689    0.000023    0.001565    0.015046    0.003621    1.777    2
+   length[16]     0.010840    0.000040    0.006118    0.027772    0.009509    1.025    2
+   length[17]     0.099778    0.000195    0.076055    0.123073    0.100515    1.223    2
+   length[18]     0.083594    0.001958    0.046465    0.192695    0.065609    0.906    2
+   length[19]     0.082393    0.000552    0.021492    0.100561    0.091215    1.212    2
+   length[20]     0.007706    0.000227    0.000940    0.050335    0.002862    0.995    2
+   length[21]     0.016143    0.000411    0.002052    0.065444    0.009565    1.128    2
+   length[22]     0.005416    0.000014    0.001698    0.014511    0.005353    1.048    2
+   length[23]     0.065073    0.000579    0.025524    0.100142    0.071672    0.964    2
+   length[24]     0.061506    0.000204    0.034674    0.080015    0.068297    1.159    2
+   length[25]     0.012737    0.000112    0.003099    0.038633    0.010869    0.950    2
+   length[26]     0.018000    0.000162    0.005654    0.050715    0.017109    0.912    2
+   length[27]     0.018685    0.001264    0.000821    0.116876    0.006296    1.070    2
+   length[28]     0.027239    0.002040    0.000559    0.150684    0.015367    0.928    2
+   length[29]     0.024117    0.001203    0.005229    0.111964    0.012298    0.936    2
+   length[30]     0.011681    0.000127    0.001826    0.036718    0.006481    0.981    2
+   length[31]     0.006181    0.000046    0.000246    0.018712    0.005947    0.894    2
+   length[32]     0.010690    0.000218    0.001155    0.048202    0.005651    0.979    2
+   length[33]     0.109351    0.000593    0.086372    0.168167    0.105912    0.900    2
+   length[34]     0.179611    0.000516    0.159425    0.233914    0.173358    0.973    2
+   length[35]     0.133150    0.000105    0.120725    0.148135    0.135924    0.907    2
+   length[36]     0.597419    0.032457    0.229761    0.750927    0.712037    0.921    2
+   length[37]     0.203702    0.000407    0.163068    0.230005    0.201724    0.895    2
+   length[38]     0.105286    0.001806    0.017192    0.155876    0.116580    1.655    2
+   length[39]     0.055586    0.000826    0.024019    0.130321    0.047765    1.179    2
+   length[40]     0.289887    0.016062    0.030649    0.449518    0.319445    0.905    2
+   length[41]     0.331486    0.002276    0.264157    0.402600    0.345498    1.050    2
+   length[42]     0.032506    0.000323    0.018951    0.073886    0.025820    0.916    2
+   length[43]     0.300580    0.010381    0.076498    0.437983    0.327128    0.900    2
+   length[44]     0.034379    0.000081    0.022882    0.051159    0.037018    0.903    2
+   length[45]     0.063850    0.000214    0.033920    0.087811    0.062147    0.905    2
+   length[46]     0.126659    0.000556    0.073074    0.151576    0.132957    1.307    2
+   length[47]     0.373912    0.002551    0.295745    0.444988    0.378752    1.036    2
+   length[48]     0.035289    0.000315    0.016643    0.074157    0.031437    1.059    2
+   length[49]     0.062413    0.000219    0.039718    0.081529    0.067800    0.899    2
+   length[50]     0.234184    0.002783    0.146634    0.338298    0.243165    1.328    2
+   length[51]     0.305688    0.003348    0.213636    0.370652    0.302804    1.293    2
+   length[52]     0.022292    0.000045    0.014859    0.034113    0.020751    0.890    2
+   length[53]     0.022360    0.000129    0.006818    0.047192    0.018691    1.011    2
+   length[54]     0.020719    0.000123    0.009885    0.045106    0.018421    0.882    2
+   length[55]     0.009926    0.000034    0.000425    0.018191    0.011036    0.889    2
+   length[56]     0.018332    0.000031    0.010022    0.025617    0.019668    0.950    2
+   length[57]     0.049315    0.000079    0.034988    0.059827    0.052915    0.868    2
+   length[58]     0.045460    0.000169    0.022175    0.061767    0.049170    0.960    2
+   length[59]     0.021257    0.000091    0.008758    0.034862    0.023641    1.000    2
+   length[60]     0.010899    0.000097    0.004068    0.032687    0.008065    1.064    2
+   length[61]     0.150242    0.002490    0.079076    0.238648    0.160877    0.891    2
+   length[62]     0.085387    0.002242    0.043555    0.189283    0.073378    0.979    2
+   length[63]     0.049039    0.001749    0.015596    0.128800    0.033114    1.173    2
+   length[64]     0.081935    0.000274    0.064883    0.107616    0.075979    0.989    2
+   length[65]     0.008969    0.000330    0.000109    0.045966    0.001830    0.966    2
+   length[66]     0.070474    0.000481    0.048024    0.101797    0.074717    1.962    2
+   length[67]     0.075097    0.001154    0.035854    0.120924    0.075912    1.010    2
+   length[68]     0.010227    0.000012    0.006645    0.014922    0.009400    0.834    2
+   length[69]     0.015220    0.000390    0.001509    0.037848    0.006302     NA      2
+   length[70]     0.036995    0.000165    0.027904    0.046086    0.046086     NA      2
+   length[71]     0.126248    0.003333    0.085428    0.167068    0.167068     NA      2
+   length[72]     0.016955    0.000019    0.013881    0.020029    0.020029     NA      2
+   length[73]     0.002414    0.000001    0.001830    0.002997    0.002997     NA      2
+   length[74]     0.002777    0.000000    0.002530    0.003023    0.003023     NA      2
+   length[75]     0.004141    0.000004    0.002780    0.005502    0.005502     NA      1 *
+   length[76]     0.005387    0.000012    0.002954    0.007819    0.007819     NA      2
+   length[77]     0.142804    0.000164    0.133741    0.151867    0.151867     NA      1 *
+   length[78]     0.087606    0.001276    0.062346    0.112865    0.112865     NA      2
+   length[79]     0.099650    0.000851    0.079022    0.120277    0.120277     NA      1 *
+   length[80]     0.030642    0.000000    0.030642    0.030642    0.030642     NA      1 *
+   length[81]     0.175724    0.000000    0.175724    0.175724    0.175724     NA      1 *
+   length[82]     0.026002    0.000000    0.026002    0.026002    0.026002     NA      1 *
+   length[83]     0.072708    0.000000    0.072708    0.072708    0.072708     NA      1 *
+   length[84]     0.078356    0.000000    0.078356    0.078356    0.078356     NA      1 *
+   length[85]     0.048540    0.000000    0.048540    0.048540    0.048540     NA      1 *
+   length[86]     0.041914    0.000000    0.041914    0.041914    0.041914     NA      1 *
+   length[87]     0.025157    0.000000    0.025157    0.025157    0.025157     NA      1 *
+   length[88]     0.088180    0.000000    0.088180    0.088180    0.088180     NA      1 *
+   length[89]     0.010168    0.000000    0.010168    0.010168    0.010168     NA      1 *
+   length[90]     0.014760    0.000000    0.014760    0.014760    0.014760     NA      1 *
+   length[91]     0.027243    0.000000    0.027243    0.027243    0.027243     NA      1 *
+   length[92]     0.030226    0.000000    0.030226    0.030226    0.030226     NA      1 *
+   length[93]     0.136212    0.000000    0.136212    0.136212    0.136212     NA      1 *
+   length[94]     0.166583    0.000000    0.166583    0.166583    0.166583     NA      1 *
+   length[95]     0.190429    0.000000    0.190429    0.190429    0.190429     NA      1 *
+   length[96]     0.076831    0.000000    0.076831    0.076831    0.076831     NA      1 *
+   length[97]     0.019961    0.000000    0.019961    0.019961    0.019961     NA      1 *
+   length[98]     0.007506    0.000000    0.007506    0.007506    0.007506     NA      1 *
+   length[99]     0.010043    0.000000    0.010043    0.010043    0.010043     NA      1 *
+   length[100]    0.000503    0.000000    0.000503    0.000503    0.000503     NA      1 *
+   length[101]    0.019825    0.000000    0.019825    0.019825    0.019825     NA      1 *
+   length[102]    0.001870    0.000000    0.001870    0.001870    0.001870     NA      1 *
+   length[103]    0.000468    0.000000    0.000468    0.000468    0.000468     NA      1 *
+   length[104]    0.004583    0.000000    0.004583    0.004583    0.004583     NA      1 *
+   length[105]    0.016224    0.000000    0.016224    0.016224    0.016224     NA      1 *
+   length[106]    0.004354    0.000000    0.004354    0.004354    0.004354     NA      1 *
+   length[107]    0.061411    0.000000    0.061411    0.061411    0.061411     NA      1 *
+   length[108]    0.078197    0.000000    0.078197    0.078197    0.078197     NA      1 *
+   length[109]    0.025133    0.000000    0.025133    0.025133    0.025133     NA      1 *
+   length[110]    0.001377    0.000000    0.001377    0.001377    0.001377     NA      1 *
+   ---------------------------------------------------------------------------------------
+   + Convergence diagnostic (PSRF = Potential Scale Reduction Factor; Gelman
+     and Rubin, 1992) should approach 1.0 as runs converge. NA is reported when
+     deviation of parameter values within all runs is 0 or when a parameter
+     value (a branch length, for instance) is not sampled in all runs.
+   * The partition was not found in all runs so the values are unreliable.
+
+
+   Summary statistics for partitions with frequency >= 0.05 in at least one run:
+       Average standard deviation of split frequencies = 0.103199
+       Maximum standard deviation of split frequencies = 0.282843
+       Average PSRF for parameter values (excluding NA and >10.0) = 1.040
+       Maximum PSRF for parameter values = 1.962
+
+
+   Clade credibility values:
+
+   Subtree rooted at node 64:
+
+                                                             /----- cgigGFP (1)
+                                                        /-100+                     
+                                                        |    \----- hcriGFP (3)
+                   /-----------------100----------------+                          
+                   |                                    \---------- asulGFP (2)
+                   |                                                               
+                   |                                         /----- discGFP (4)
+                   |                                    /-90-+                     
+                   |                                    |    \----- rfloRFP (7)
+              /-70-+    /--------------100--------------+                          
+              |    |    |                               \---------- rfloGFP (6)
+              |    |    |                                                          
+              |    |    |    /------------------------------------- dendGFP (8)
+              |    |    |    |                                                     
+              |    |    |    |                    /---------------- mcavGFP (9)
+              |    \-70-+    |                    |                                
+              |         |    |                    |          /----- mcavRFP (12)
+              |         |    |               /-90-+     /-90-+                     
+              |         |    |               |    |     |    \----- tgeoRFP (35)
+              |         |    |               |    \--90-+                          
+              |         \-80-+               |          |    /----- scubGFP (14)
+        /--60-+              |          /-80-+          \-100+                     
+        |     |              |          |    |               \----- alorGFP (33)
+        |     |              |          |    |                                     
+        |     |              |          |    |               /----- mcavCFP (11)
+        |     |              |     /-80-+    \------100------+                     
+        |     |              |     |    |                    \----- alorCFP (34)
+        |     |              |     |    |                                          
+        |     |              \--80-+    \-------------------------- mcavGFP2 (10)
+   --60-+     |                    |                                               
+        |     |                    \------------------------------- fancGFP (13)
+        |     |                                                                    
+        |     |                                              /----- dlinGFP (15)
+        |     \----------------------100---------------------+                     
+        |                                                    \----- dlinGFP2 (16)
+        |                                                                          
+        \---------------------------------------------------------- discRFP (5)
+                                                                                   
+   Root part of tree:
+
+   /--------------------------------------------------------------- ppluGFP (36)
+   |                                                                               
+   |                                         /--------------------- avicGFP (20)
+   |                                         |                                     
+   |                               /---100---+          /---------- avicCFP (21)
+   |                               |         \----100---+                          
+   |                    /----100---+                    \---------- avicYFP (22)
+   |                    |          |                                               
+   |                    |          \------------------------------- acoerGFP (23)
+   |          /---100---+                                                          
+   |          |         |                    /--------------------- amagGFP (24)
+   |          |         |                    |                                     
+   |          |         \---------70---------+          /---------- amacGFP (25)
+   |          |                              \----100---+                          
+   |          |                                         \---------- amacOFP (26)
+   |----100---+                                                                    
+   +          |                                         /---------- cgregGFP1 (27)
+   |          |                    /---------50---------+                          
+   |          |                    |                    \---------- cgregGFP3 (29)
+   |          |                    |                                               
+   |          \---------90---------+         /--------------------- cgregGFP2 (28)
+   |                               |         |                                     
+   |                               |         |--------------------- cgregGFP4 (30)
+   |                               \----80---+                                     
+   |                                         |          /---------- cgregGFP10 (31)
+   |                                         \----60----+                          
+   |                                                    \---------- cgregGFP45 (32)
+   |                                                                               
+   |                               /------------------------------- (64)
+   |                               |                                               
+   |                               |                    /---------- zoanGFP (17)
+   \---------------70--------------+         /----100---+                          
+                                   |         |          \---------- zoanRFP (19)
+                                   \---100---+                                     
+                                             \--------------------- zoanYFP (18)
+                                                                                   
+
+   Phylogram (based on average branch lengths):
+
+   /-------------------------------------------------- ppluGFP (36)
+   |                                                                               
+   |                                                        / avicGFP (20)
+   |                                                        |                      
+   |                                                     /--+/- avicCFP (21)
+   |                                                     |  \+                     
+   |                                             /-------+   \- avicYFP (22)
+   |                                             |       |                         
+   |                                             |       \----- acoerGFP (23)
+   |                     /-----------------------+                                 
+   |                     |                       |  /---- amagGFP (24)
+   |                     |                       |  |                              
+   |                     |                       \--+   /- amacGFP (25)
+   |                     |                          \---+                          
+   |                     |                              \-- amacOFP (26)
+   |---------------------+                                                         
+   |                     |                     / cgregGFP1 (27)
+   |                     |                    /+                                   
+   |                     |                    |\- cgregGFP3 (29)
+   |                     |                    |                                    
+   |                     \--------------------+/- cgregGFP2 (28)
+   |                                          ||                                   
+   |                                          || cgregGFP4 (30)
+   |                                          \+                                   
+   |                                           | cgregGFP10 (31)
+   |                                           |                                   
+   |                                           \ cgregGFP45 (32)
+   |                                                                               
+   |                                                         /----- cgigGFP (1)
+   |                                                    /----+                     
+   |                                                    |    \--------- hcriGFP (3)
+   |                          /-------------------------+                          
+   +                          |                         \----- asulGFP (2)
+   |                          |                                                    
+   |                          |                   /------ discGFP (4)
+   |                          |                  /+                                
+   |                          |                  |\----- rfloRFP (7)
+   |                     /----+    /-------------+                                 
+   |                     |    |    |             \---- rfloGFP (6)
+   |                     |    |    |                                               
+   |                     |    |    |   /----------- dendGFP (8)
+   |                     |    |    |   |                                           
+   |                     |    |    |   |       /---- mcavGFP (9)
+   |                     |    \----+   |       |                                   
+   |                     |         |   |       | /---- mcavRFP (12)
+   |                     |         |   |     /-+-+                                 
+   |                     |         |   |     | | \--------- tgeoRFP (35)
+   |                     |         |   |     | |                                   
+   |                     |         \---+     | |         /----------- scubGFP (14)
+   |                /----+             |    /+ \---------+                         
+   |                |    |             |    ||           \------- alorGFP (33)
+   |                |    |             |    ||                                     
+   |                |    |             |    ||  /----- mcavCFP (11)
+   |                |    |             |  /-+\--+                                  
+   |                |    |             |  | |   \------------ alorCFP (34)
+   |                |    |             |  | |                                      
+   |                |    |             \--+ \--- mcavGFP2 (10)
+   |          /-----+    |                |                                        
+   |          |     |    |                \------------- fancGFP (13)
+   |          |     |    |                                                         
+   |          |     |    |                / dlinGFP (15)
+   |          |     |    \----------------+                                        
+   |          |     |                     \ dlinGFP2 (16)
+   \----------+     |                                                              
+              |     \--------------------- discRFP (5)
+              |                                                                    
+              |                         /------- zoanGFP (17)
+              |                      /--+                                          
+              |                      |  \------- zoanRFP (19)
+              \----------------------+                                             
+                                     \----- zoanYFP (18)
+                                                                                   
+   |------------| 0.200 expected changes per site
+
+   Calculating tree probabilities...
+
+   Credible sets of trees (10 trees sampled):
+      50 % credible set contains 5 trees
+      90 % credible set contains 10 trees
+      95 % credible set contains 10 trees
+      99 % credible set contains 10 trees
+
+
+MrBayes > 
+   Deleting previously defined characters
+   Deleting previously defined taxa
+   Quitting program
+

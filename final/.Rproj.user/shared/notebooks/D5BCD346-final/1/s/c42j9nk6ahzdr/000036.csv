@@ -1,0 +1,2 @@
+"0","co <- c(""GREEN"", ""CYAN"", ""YELLOW"", ""RED"", ""ORANGE"")"
+"0","tiplabels(pch = 22, bg = co[as.numeric(states)], cex = 1.5, adj = 1)"

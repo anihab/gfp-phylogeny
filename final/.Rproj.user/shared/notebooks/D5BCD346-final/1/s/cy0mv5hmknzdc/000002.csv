@@ -1,0 +1,37 @@
+"0","# load required packages"
+"0","library(phytools) "
+"2","Warning:"
+"2"," package ‘phytools’ was built under R version 4.1.2
+"
+"2","Loading required package: ape
+"
+"2","Warning:"
+"2"," package ‘ape’ was built under R version 4.1.2
+"
+"2","Loading required package: maps
+"
+"0","library(ggtree)"
+"2","Warning:"
+"2"," package ‘ggtree’ was built under R version 4.1.2
+"
+"2","ggtree v3.2.1  For help: https://yulab-smu.top/treedata-book/
+
+If you use ggtree in published research, please cite the most appropriate paper(s):
+
+1. Guangchuang Yu. Using ggtree to visualize data on tree-like structures. Current Protocols in Bioinformatics. 2020, 69:e96. doi:10.1002/cpbi.96
+2. Guangchuang Yu, Tommy Tsan-Yuk Lam, Huachen Zhu, Yi Guan. Two methods for mapping and visualizing associated data on phylogeny using ggtree. Molecular Biology and Evolution. 2018, 35(12):3041-3043. doi:10.1093/molbev/msy194
+3. Guangchuang Yu, David Smith, Huachen Zhu, Yi Guan, Tommy Tsan-Yuk Lam. ggtree: an R package for visualization and annotation of phylogenetic trees with their covariates and other associated data. Methods in Ecology and Evolution. 2017, 8(1):28-36. doi:10.1111/2041-210X.12628
+
+
+"
+"2","
+Attaching package: ‘ggtree’
+
+"
+"2","The following object is masked from ‘package:ape’:
+
+    rotate
+
+"
+"0","library(ggplot2)"
+"0","library(ape)"

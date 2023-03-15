@@ -1,0 +1,26 @@
+set precision = 5
+set scientific=Yes
+set autoclose=yes
+set nowarnings=yes
+set usebeagle=no
+execute infile.nex
+outgroup ppluGFP
+lset coding = all
+lset Nst= 1
+lset Nucmodel= 4by4
+lset Rates= equal
+lset Nbetacat= 5
+prset pinvarpr = uniform(0.0,1.0)
+prset ratepr = fixed
+prset statefreqpr = dirichlet(1.0)
+prset revmatpr = dirichlet(1.0,1.0,1.0,1.0,1.0,1.0)
+prset ratecorrpr = uniform(-1.0,1.0)
+prset covswitchpr = uniform(0.0,100.0)
+prset Tratiopr = beta(1.0, 1.0)
+prset brlenspr = unconstrained:exponential(10.0)
+report Siterates=No
+report revmat=dirichlet
+mcmc ngen=5000 filename=infile.nex nruns=2 nchains=4 temp=0.200 swapfreq=1 nswaps=1 samplefreq=1000 mcmcdiagn=Yes minpartfreq=0.1 allchains=No relburnin=Yes burnin=0 burninfrac=0.25 stoprule=Yes starttree=random stopval=0.01 Savebrlens=Yes nperts=0 Ordertaxa=Yes
+sump burnin=10 relburnin=Yes burninfrac=0.25 nruns=2 outputname=sumpoutput.out   
+sumt burnin=10 relburnin=Yes burninfrac=0.25 nruns=2 ntrees=1 minpartfreq=0.05 contype=Halfcompat conformat=Figtree
+quit

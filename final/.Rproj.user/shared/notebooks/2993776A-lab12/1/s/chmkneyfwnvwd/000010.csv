@@ -1,0 +1,5 @@
+"0","povpop <- transform(povpop, povrate = b17001_002 / popestimate2015)"
+"0","povpop <- transform(povpop, povrateM = b17001_003 / popestimate2015)"
+"0","povpop <- transform(povpop, povrateF = b17001_017 / popestimate2015)"
+"0",""
+"0","pairs(povpop[,c('povrate', 'povrateM', 'povrateF')])"

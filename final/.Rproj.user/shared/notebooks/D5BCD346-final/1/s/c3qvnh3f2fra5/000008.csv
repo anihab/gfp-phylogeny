@@ -1,0 +1,46 @@
+"0","nodelabels(thermo = ARDreconstruction$lik.anc, piecol = co, cex = 0.3) "
+"2","Warning in rect(xl, yb, xr, yb + thermo[, 1], border = NA, col = piecol[1]) :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
+"2","Warning in rect(xl, yb + rowSums(thermo[, 1:(i - 1), drop = FALSE]), xr,  :"
+"2","
+ "
+"2"," imaginary parts discarded in coercion
+"
